@@ -21,6 +21,7 @@ public class z83 {
 
 	    //сортировка массива
         //coртировка шелла
+	//shell sort
 
 		    for (step = N / 2; step > 0; step /= 2)
 		        for (m = step; m < N; m++)
@@ -47,6 +48,7 @@ public class z83 {
 		    int number = sc.nextInt();
 		
 		   //интерполяционный поик этого числа в масииве
+		   //interpolation search
 		    int mid;
 		    int low = 0;
 		    int high = arr.length - 1;
