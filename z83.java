@@ -11,18 +11,15 @@ public class z83 {
 	    int tmp;
 		int N = 10;
 		int[] arr= new int[N];	
-		//заполнение массива рандомными числами
+		//Г§Г ГЇГ®Г«Г­ГҐГ­ГЁГҐ Г¬Г Г±Г±ГЁГўГ  Г°Г Г­Г¤Г®Г¬Г­Г»Г¬ГЁ Г·ГЁГ±Г«Г Г¬ГЁ
 		for(int i = 0; i < arr.length; i++) {
 			arr[i]=  0 + (int) (Math.random() * 101);
 		}
-		System.out.println("Исходный массив:");
+		System.out.println("Г€Г±ГµГ®Г¤Г­Г»Г© Г¬Г Г±Г±ГЁГў:");
 		
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + ", ");
 		}
-
-	    //сортировка массива
-        //coртировка шелла
 
 		    for (step = N / 2; step > 0; step /= 2)
 		        for (m = step; m < N; m++)
@@ -38,17 +35,17 @@ public class z83 {
 		            arr[n] = tmp;
 		        }
 		    System.out.println();
-			System.out.println("отсортированный массив:");
+			System.out.println("Г®ГІГ±Г®Г°ГІГЁГ°Г®ГўГ Г­Г­Г»Г© Г¬Г Г±Г±ГЁГў:");
 			for(int i = 0; i < arr.length; i++) {
 				System.out.print(arr[i] + ", ");
 			}
 			
-			// Ввести с клавиатуры некоторое целое число
+			// Г‚ГўГҐГ±ГІГЁ Г± ГЄГ«Г ГўГЁГ ГІГіГ°Г» Г­ГҐГЄГ®ГІГ®Г°Г®ГҐ Г¶ГҐГ«Г®ГҐ Г·ГЁГ±Г«Г®
 		    System.out.println();
-		    System.out.println("введите число которое хотите найти");
+		    System.out.println("ГўГўГҐГ¤ГЁГІГҐ Г·ГЁГ±Г«Г® ГЄГ®ГІГ®Г°Г®ГҐ ГµГ®ГІГЁГІГҐ Г­Г Г©ГІГЁ");
 		    int number = sc.nextInt();
 		
-		   //интерполяционный поик этого числа в масииве
+		   //ГЁГ­ГІГҐГ°ГЇГ®Г«ГїГ¶ГЁГ®Г­Г­Г»Г© ГЇГ®ГЁГЄ ГЅГІГ®ГЈГ® Г·ГЁГ±Г«Г  Гў Г¬Г Г±ГЁГЁГўГҐ
 		    int mid;
 		    int low = 0;
 		    int high = arr.length - 1;
@@ -65,11 +62,11 @@ public class z83 {
 		    }
 
 		    if (arr[low] == number)
-			    System.out.println("индекс " + number + " = " + low); 
+			    System.out.println("ГЁГ­Г¤ГҐГЄГ± " + number + " = " + low); 
 		    if (arr[high] == number)
-			    System.out.println("индекс " + number + " = " + high); 
+			    System.out.println("ГЁГ­Г¤ГҐГЄГ± " + number + " = " + high); 
 		    if((arr[low] != number) && (arr[high] != number))
-			    System.out.println("число в массиве отсутсвует"); 
+			    System.out.println("Г·ГЁГ±Г«Г® Гў Г¬Г Г±Г±ГЁГўГҐ Г®ГІГ±ГіГІГ±ГўГіГҐГІ"); 
 
 		}
 
