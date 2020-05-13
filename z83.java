@@ -11,7 +11,7 @@ public class z83 {
 	    int tmp;
 		int N = 10;
 		int[] arr= new int[N];	
-		//çàïîëíåíèå ìàññèâà ðàíäîìíûìè ÷èñëàìè
+		//Filling an array with random numbers
 		for(int i = 0; i < arr.length; i++) {
 			arr[i]=  0 + (int) (Math.random() * 101);
 		}
@@ -20,6 +20,7 @@ public class z83 {
 		for(int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i] + ", ");
 		}
+	//shell sort
 
 		    for (step = N / 2; step > 0; step /= 2)
 		        for (m = step; m < N; m++)
@@ -40,12 +41,12 @@ public class z83 {
 				System.out.print(arr[i] + ", ");
 			}
 			
-			// Ââåñòè ñ êëàâèàòóðû íåêîòîðîå öåëîå ÷èñëî
+			
 		    System.out.println();
 		    System.out.println("ââåäèòå ÷èñëî êîòîðîå õîòèòå íàéòè");
 		    int number = sc.nextInt();
 		
-		   //èíòåðïîëÿöèîííûé ïîèê ýòîãî ÷èñëà â ìàñèèâå
+		   //interpolation search
 		    int mid;
 		    int low = 0;
 		    int high = arr.length - 1;
